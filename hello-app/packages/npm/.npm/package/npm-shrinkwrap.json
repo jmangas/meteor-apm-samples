@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "heapdump": {
+      "version": "0.2.4"
+    }
+  }
+}

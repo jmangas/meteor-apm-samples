@@ -13,6 +13,7 @@ if(Meteor.isServer) {
       var options = {
         sort: {takenAt: -1}
       };
+      ABC
       return SnapShots.findOne({url: url}, options);
     } 
   });
@@ -24,5 +25,7 @@ if(Meteor.isServer) {
   }
 
   //Initialize APM
-  Apm.connect('cjw7pzNyaXs5RbuKc', 'pKmYjvr57oFAxDC99');
+  Apm.connect('cjw7pzNyaXs5RbuKc', 'pKmYjvr57oFAxDC99', {
+    endpoint: "http://localhost:11011"
+  });
 }
